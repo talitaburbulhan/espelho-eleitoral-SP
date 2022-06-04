@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🪞 Espelho eleitoral - SP</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <h1>🪞Espelho, espelho meu, há algum candidato como eu?</h1>
+        <h2>Nas eleições de 2020, aproximadamente 94 mil pessoas foram candidatas no estado de São Paulo. Quantas delas tinham características IGUAIS às suas?</h2>
+        
+        <div class="pergunta">
+            <p>🍼Qual é o ano do seu nascimento?
+                <input class="input-ano">
+            </p>
+        </div>
+
+        <div class="pergunta">
+            <p>⚧️Qual é o seu gênero?</p>
+            
+            <label>
+                <input type="radio" name="genero" value="FEMININO">Feminino
+            </label><br>
+            
+            <label>
+                <input type="radio" name="genero" value="MASCULINO">Masculino
+            </label><br>
+            
+            <label><input type="radio" id="outro" name="genero" value="OUTRO">Outro
+            </label>
+
+        </div>
+
+        <div class="pergunta">
+            <p>📚Qual é o seu grau de instrução?</p>
+
+            <select class="instrucao" name="select">
+
+                <option value="TODOS" selected></option>
+                <option value="ANALFABETO">Analfabeto</option>
+                <option value="LÊ E ESCREVE">Lê e escreve</option>
+                <option value="ENSINO FUNDAMENTAL INCOMPLETO">Ensino Fundamental incompleto</option>
+                <option value="ENSINO FUNDAMENTAL COMPLETO">Ensino Fundamental completo</option>
+                <option value="ENSINO MÉDIO INCOMPLETO">Ensino Médio incompleto</option>
+                <option value="ENSINO MÉDIO INCOMPLETO">Ensino Médio completo</option>
+                <option value="SUPERIOR INCOMPLETO">Ensino Superior incompleto</option>
+                <option value="SUPERIOR COMPLETO">Ensino Superior completo</option>
+            
+              </select>
+
+        </div>
+
+        <div class="pergunta">
+            <p>💘Sobre o seu estado civil, você é uma pessoa:</p>
+
+            <select class="estadoCivil" name="select">
+                
+                <option value="TODOS" selected></option>
+                <option value="SOLTEIRO(A)">Solteira</option>
+                <option value="CASADO(A)">Casada</option>
+                <option value="DIVORCIADO(A)">Divorciada</option>
+                <option value="SEPARADO(A) JUDICIALMENTE">Separada judicialmente</option>
+                <option value="VIÚVO(A)">Viúva</option>
+                 
+              </select>
+
+        </div>
+
+        <div  class="pergunta">
+            <p>🧑🏿‍🦱Você se considera da raça</p>
+
+            <select class="raca" name="select">
+                
+                <option value="TODOS" selected></option>
+                <option value="PRETA">Preta</option>
+                <option value="PARDA">Parda</option>
+                <option value="INDÍGENA">Indígena</option>
+                <option value="BRANCA">Branca</option>
+                <option value="AMARELA">Amarela</option>
+                <option value="NÃO INFORMADO">Prefiro não responder</option>
+                 
+              </select>
+
+        </div>
+
+        <h2>Resultado</h2>
+
+
+        <p>Das <b>93.852 pessoas que se candidataram</b> para cargos municipais (prefeito, vice-prefeito e vereador), no estado de São Paulo, <output class="contagem">....</output> tinham características iguais às suas.</p> 
+        <p>Isso corresponde a <output class="porcentagem">...%</output> do total.</p>  <!-- é uma tag html dinâmica , ela foi criada para abrigar o resultado de uma conta-->
+        </p>
+
+        <footer>
+            Fonte: 
+            <a href="https://dadosabertos.tse.jus.br/dataset/candidatos-2020-subtemas/resource/8187b1aa-5026-4908-a15a-0bf777ee6701">Tribunal Superior Eleitoral</a>
+        </footer>
+
+        <script src="app.js"></script>
+        
+    </body>
+</html>
